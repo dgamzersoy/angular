@@ -1,0 +1,39 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container-fluid">
+   
+       
+       <div class="col-md-5">
+         <label for="filterText" class="form-label"> Ürün Ara </label>
+         <input type="text"  class="form-control" id="filterText"
+         placeholde="arama ifadesi giriniz">
+        </div>
+      
+      
+       <div class="col-md-3 offset-md-1 ">
+      
+        <div class="input-group mb-3-py-6">
+        
+          <button type="button" class="btn btn-outline-secondary">Giriş Yapınız</button>
+          <button type="button" class="btn btn-outline-secondary dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
+            <span class="visually-hidden">Toggle Dropdown</span>
+          </button>
+          <ul class="dropdown-menu">
+            <li><button type="button" a href="loginForm" class="btn btn-bordered">Giriş Yap</button></li>
+            <li><a class="dropdown-item" href="#">Kaydol</a></li>
+            <li><a class="dropdown-item" href="#">Şifremi Unuttum</a></li>
+            <li><hr class="dropdown-divider"></li>
+          
+          </ul>
+ 
+      
+        
+        </div>
+      </div>
+         <div class="col-md-4 offset-md-1">
+          
+         <app-cart-summary></app-cart-summary>
+          </div>
+ 
+
+   </div>
+</nav>

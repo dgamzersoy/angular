@@ -1,0 +1,29 @@
+
+
+
+
+
+
+<div class="container-fluid">
+  <div class="row justify-content-md-center">
+  
+        
+<div *ngFor="let product of products  " class="card" style="width: 18rem;">
+    <img [src]="product.imageUrl" class="card-img-top" alt="..." width="140" height="140" >
+    <div class="card-body">
+      <h5 class="card-title">{{product.name}} <s> {{product.price| currency}}</s> {{product.price | vatAdded:10 | currency}}</h5>
+      <p class="card-text">{{product.description}} </p>
+      <button (click)="addToCart(product)" type="button" class="btn btn-primary" >Sepete Ekle</button>
+    </div>
+
+    </div>
+  </div>
+
+ 
+  
+ 
+  
+ 
+   
+
+</div>
